@@ -3,3 +3,4 @@ __pycache__/
 results/features.csv
 results/prepared.csv
 results/batch_*_prepared.csv
+.venv/
