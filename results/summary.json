@@ -1,0 +1,115 @@
+{
+  "winner": "Tree_6_tuned",
+  "best_ap": 0.04172704551299039,
+  "selected": {
+    "name": "Tree_6_tuned",
+    "group": "tuned",
+    "train_ap": 0.7897536056709551,
+    "val_ap": 0.0414112542938621,
+    "roc_auc": 0.5391726296147756,
+    "recall05": 0.0,
+    "fit_s": 0.5925945000008142,
+    "params": "{'ccp_alpha': 0.0, 'class_weight': 'balanced', 'criterion': 'gini', 'max_depth': 5, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 60, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 42, 'splitter': 'best'}"
+  },
+  "grids": {
+    "Tree_6": {
+      "grid": {
+        "model__max_depth": [
+          3,
+          5,
+          8
+        ],
+        "model__min_samples_leaf": [
+          20,
+          60
+        ]
+      },
+      "best": {
+        "model__max_depth": 5,
+        "model__min_samples_leaf": 60
+      },
+      "ap": 0.041411254293862165
+    },
+    "Tree_None": {
+      "grid": {
+        "model__max_depth": [
+          3,
+          5,
+          8
+        ],
+        "model__min_samples_leaf": [
+          20,
+          60
+        ]
+      },
+      "best": {
+        "model__max_depth": 5,
+        "model__min_samples_leaf": 60
+      },
+      "ap": 0.041411254293862165
+    }
+  },
+  "raw_sha256": "db30ccb4ea402e3c8bf2c99db06e288d4f2a772f6928f9dbe26a920d69793e24",
+  "features_sha256": "5e9de2522052fa049005dc7ef0f21bce7ffc60b5583bfddd34fdc8351576f32d",
+  "repeat_exact": true,
+  "raw_rows": 1516948,
+  "initial_rows": 910168,
+  "feature_rows": 146364,
+  "labelled_rows": 141490,
+  "splits": {
+    "fit": {
+      "n": 101545,
+      "positive": 1162,
+      "start": "2020-02-01 00:30:00",
+      "end": "2020-04-29 23:59:00"
+    },
+    "validation": {
+      "n": 32807,
+      "positive": 1164,
+      "start": "2020-05-01 21:57:00",
+      "end": "2020-05-30 23:59:00"
+    },
+    "final_train": {
+      "n": 134926,
+      "positive": 2326,
+      "start": "2020-02-01 00:30:00",
+      "end": "2020-05-30 23:59:00"
+    },
+    "test": {
+      "n": 5404,
+      "positive": 1440,
+      "start": "2020-06-01 01:03:00",
+      "end": "2020-06-05 09:59:00"
+    }
+  },
+  "versions": {
+    "python": "3.12.8",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "sklearn": "1.5.2"
+  },
+  "features": [
+    "TP2",
+    "TP3",
+    "H1",
+    "DV_pressure",
+    "Reservoirs",
+    "Oil_temperature",
+    "Motor_current",
+    "COMP",
+    "DV_eletric",
+    "Towers",
+    "MPG",
+    "LPS",
+    "Pressure_switch",
+    "Oil_level",
+    "Caudal_impulses",
+    "tp3_mean_30m",
+    "tp3_slope_10m",
+    "load_share_30m",
+    "load_switches_30m",
+    "pressure_delta"
+  ],
+  "seed": 42,
+  "test_evaluated": false
+}

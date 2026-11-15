@@ -1,0 +1,7 @@
+{
+  "future_invariance_exact": true,
+  "batch_context_allclose": true,
+  "atol": 1e-08,
+  "rtol": 1e-08,
+  "checked_batch_rows": 1652
+}
