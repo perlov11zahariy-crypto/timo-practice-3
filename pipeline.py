@@ -96,7 +96,7 @@ def train():
     bases=sorted([r for r in rows if r['name']!='Dummy'],key=lambda r:-r['val_ap'])[:2]
     grids={}
     for r in bases:
-        p=models[r['name']];m=p[-1]
+        p=clone(models[r['name']]);m=p[-1]
         if isinstance(m,LogisticRegression):grid={'model__C':[.03,.1,.3,1,3]}
         elif isinstance(m,DecisionTreeClassifier):grid={'model__max_depth':[3,5,8],'model__min_samples_leaf':[20,60]}
         elif isinstance(m,RandomForestClassifier):grid={'model__max_depth':[5,10],'model__min_samples_leaf':[20,60]}

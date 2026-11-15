@@ -1,15 +1,15 @@
 {
-  "winner": "Tree_6",
+  "winner": "Tree_6_tuned",
   "best_ap": 0.04172704551299039,
   "selected": {
-    "name": "Tree_6",
-    "group": "depth",
-    "train_ap": 0.8089460488502141,
-    "val_ap": 0.04172704551299039,
-    "roc_auc": 0.5439189060777165,
+    "name": "Tree_6_tuned",
+    "group": "tuned",
+    "train_ap": 0.7897536056709551,
+    "val_ap": 0.041411254293862165,
+    "roc_auc": 0.5391726296147756,
     "recall05": 0.0,
-    "fit_s": 0.571717400000125,
-    "params": "{'ccp_alpha': 0.0, 'class_weight': 'balanced', 'criterion': 'gini', 'max_depth': 6, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 30, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 42, 'splitter': 'best'}"
+    "fit_s": 0.5461620999994921,
+    "params": "{'ccp_alpha': 0.0, 'class_weight': 'balanced', 'criterion': 'gini', 'max_depth': 5, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 60, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 42, 'splitter': 'best'}"
   },
   "grids": {
     "Tree_6": {
